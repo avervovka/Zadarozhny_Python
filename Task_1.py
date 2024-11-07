@@ -17,7 +17,7 @@ def algo_print(a):
             return 'Hello'
         return 'This number is not valid'
     except ValueError:
-        if re.fullmatch(r'\w+', a):
+        if re.fullmatch('[a-zA-Z]', a):
             return ['There is no such name', 'Hello, John'][a.lower() == 'john']
         return 'Not Valid'
     except Exception as e:
