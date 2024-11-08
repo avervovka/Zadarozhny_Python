@@ -3,7 +3,7 @@ import re
 
 
 def algo_print(a):
-    print(a, type(a))
+    # print(a, type(a))
     try:
         if a.startswith('[') and a.endswith(']'):
             a = list(a)
@@ -17,9 +17,9 @@ def algo_print(a):
             return 'Hello'
         return 'This number is not valid'
     except ValueError:
-        if re.fullmatch('[a-zA-Z]', a):
+        if re.fullmatch(r'^[a-zA-Z0-9\s\-]+$', a):
             return ['There is no such name', 'Hello, John'][a.lower() == 'john']
-        return 'Not Valid'
+        return 'Not valid value'
     except Exception as e:
         print(str(e))
 
@@ -34,6 +34,6 @@ def is_valid(x):
 
 
 if __name__ == "__main__":
-    print('Program Started')
+    print('Program started, input your value(s)')
     print(algo_print(input()))
-    print('Program Finished')
+    print('Program finished')
