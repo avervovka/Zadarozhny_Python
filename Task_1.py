@@ -1,25 +1,24 @@
 from types import NoneType
-import re
+from re import fullmatch
 
 
 def algo_print(a):
-    # print(a, type(a))
     try:
         if a.startswith('[') and a.endswith(']'):
-            a = list(a)
-            a_filtered = [i for i in a if is_valid(i)]
+            a = a.lstrip('[').rstrip(']').split(',')
+            d = [i.replace(' ', '') for i in a]
+            a_filtered = [int(i) for i in d if is_valid(i)]
             return a_filtered
         elif a.startswith('{') or a.startswith('('):
             return "Entered value is not valid"
-
         a = float(a)
         if a > 7:
             return 'Hello'
         return 'This number is not valid'
     except ValueError:
-        if re.fullmatch(r'^[a-zA-Z0-9\s\-]+$', a):
+        if fullmatch(r'^[\w\s\-]+$', a):
             return ['There is no such name', 'Hello, John'][a.lower() == 'john']
-        return 'Not valid value'
+        return "Entered value is not valid"
     except Exception as e:
         print(str(e))
 
