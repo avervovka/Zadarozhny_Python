@@ -7,8 +7,8 @@ def algo_print(a):
         if a.startswith('[') and a.endswith(']'):
             a = a.lstrip('[').rstrip(']').split(',')
             d = [i.replace(' ', '') for i in a]
-            a_filtered = [int(i) for i in d if is_valid(i)]
-            return a_filtered
+            a_filtered = set([int(i) for i in d if is_valid(i)])
+            return a_filtered if len(a_filtered) > 0 else 'No Values'
         elif a.startswith('{') or a.startswith('('):
             return "Entered value is not valid"
         a = float(a)
