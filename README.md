@@ -1,8 +1,9 @@
-Hello! This is a technical task for Andersen. This document will describe how to use the Task_1.py program.
+Hello! This is a technical task for Andersen. This document will describe how to use Task_1.py and Task_2.py files.
 
 Download and install the latest version of Python on your computer according to your operating system. URL: https://www.python.org/downloads/.
 You will also need to install Git according to your operating system. URL: https://github.com/git-guides/install-git.
-
+----------------------------------------------------------------------------------------------------------------------------------------------
+HOW TO USE Task_1.py.
 1. DOWNLOADING 
     
     In order to copy a project from a remote repository to your computer, you need to complete several steps.
@@ -18,7 +19,7 @@ You will also need to install Git according to your operating system. URL: https
     **git clone https://github.com/avervovka/Zadarozhny_Python.git**
 
 
-2. START
+2. STARTING
 
     2.1 Open a terminal
 
@@ -46,4 +47,40 @@ Input of other data types is **not** provided.
 
 3.3 After entering a value in the field and pressing the Enter button, you receive the result of the program execution, and the next line you receive the message **“Program finished”**. This completes the use of the program.
 
-**THANKS FOR USING PROGRAM!**
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+**HOW TO USE Task_2.py**.
+
+
+1. DOWNLOADING 
+    
+    In order to copy a project from a remote repository to your computer, you need to complete several steps.
+
+    1.1 Create a folder with a name that suits you (e.x: **Projects**). 
+    
+    1.2 Open a terminal on your computer
+
+    1.3 Navigate to the project folder in the terminal
+
+    1.4 Run the command in the terminal:
+
+    **git clone https://github.com/avervovka/Zadarozhny_Python.git**
+
+
+2. STARTING
+
+    2.1 Open a terminal
+
+    2.2 Navigate to the project folder in the terminal
+
+    2.3 Run the command in the terminal:
+
+    **python Task_2.py**
+   
+   
+   You will see answer to the **question №2.1** and correct bracket sequences (answer to the **question №2.2**). 
+
+
+**THANKS FOR USING PROGRAMS!**
